@@ -8,4 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  base: "/frontendonly-user-manager-react/"
 })
