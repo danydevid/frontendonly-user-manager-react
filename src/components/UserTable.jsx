@@ -5,6 +5,7 @@ import '../App.css'
 export default function UserTable() {
   let { users, setUsers, setFormData } = useGlobal()
   const [searchTerm, setSearchTerm] = useState('')
+  console.log('Render UserTable | users:', users, 'searchTerm:', searchTerm);
   const filteredUsers = users.filter(user =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -30,7 +31,7 @@ export default function UserTable() {
           id="search"
           placeholder='search...'
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => setSearchTerm(e.target.value)} 
         />
       </div>
       <table className="table">

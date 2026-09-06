@@ -82,7 +82,7 @@ export default function Form() {
       </div>
       <div>
         <button type="submit">Submit</button>
-        <button onClick={resetHandler}>Reset</button>
+        <button onClick={resetHandler} type="button">Reset</button>
       </div>
     </form>
   )
