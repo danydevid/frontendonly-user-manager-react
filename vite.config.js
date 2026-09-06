@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite"
 const buildTarget = process.env.BUILD_TARGET || 'web'
 
 // GitHub Pages needs subpath, but Tauri and local web dev MUST use '/'
-const BASE_URL = buildTarge === 'web' ? '/frontendonly-user-manager-react/' : '/'
+const BASE_URL = buildTarget === 'web' ? '/frontendonly-user-manager-react/' : '/'
 
 // https://vite.dev/config/
 export default defineConfig({
